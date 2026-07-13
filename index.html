@@ -1,98 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amber365 ❤️</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<title>Amber365 ❤️</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <div class="background-hearts"></div>
 
-<!-- Welcome Screen -->
+<section id="intro" class="screen active">
 
-<section id="welcome" class="screen active">
+<div class="intro-card">
 
-    <div class="welcome-card">
+<div class="heart">
+♡
+</div>
 
-        <h1>Amber365</h1>
+<h1>For Amber</h1>
 
-        <p class="tagline">
-            365 songs.<br>
-            365 reminders of you.
-        </p>
+<p>
+365 songs.<br>
+365 reminders of you.
+</p>
 
-        <button id="beginButton">
-            Begin ♡
-        </button>
+<button id="openButton">
+Open my heart
+</button>
 
-    </div>
+</div>
 
 </section>
 
-<!-- Main App -->
-
 <section id="app" class="screen">
 
-    <header>
+<header>
 
-        <div class="progress">
+<div class="progress-text">
 
-            <span id="dayNumber">
-                Day 1 of 365
-            </span>
+<span id="dayNumber"></span>
 
-            <span id="progress">
-                1 / 365
-            </span>
+<span id="progress"></span>
 
-        </div>
+</div>
 
-    </header>
+<div class="progress-bar">
 
-    <main>
+<div id="progressFill"></div>
 
-        <div class="song-card" id="songCard">
+</div>
 
-            <div class="song-content">
+</header>
 
-                <h2 id="songTitle">
-                    Sun to Me
-                </h2>
+<main>
 
-                <h3 id="artist">
-                    Zach Bryan
-                </h3>
+<div class="song-card" id="songCard">
 
-                <blockquote id="lyric">
-                    "You're the sun to me."
-                </blockquote>
+<h2 id="songTitle"></h2>
 
-            </div>
+<h3 id="artist"></h3>
 
-        </div>
+<blockquote id="lyric"></blockquote>
 
-    </main>
+<button id="heartButton">
+♡
+</button>
 
-    <footer>
+</div>
 
-        <button id="previous">
-            ←
-        </button>
+</main>
 
-        <button id="next">
-            →
-        </button>
+<footer>
 
-    </footer>
+<button id="previous">
+←
+</button>
+
+<button id="next">
+→
+</button>
+
+</footer>
+
+<div class="signature">
+
+Made with ❤️ for Amber
+
+</div>
 
 </section>
 
@@ -100,4 +107,5 @@
 <script src="script.js"></script>
 
 </body>
+
 </html>
