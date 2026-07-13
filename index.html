@@ -1,5 +1,103 @@
-<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>Amber365</title><link rel='stylesheet' href='style.css'></head><body>
-<div id='card'><h1>Amber365 ❤️</h1><p id='day'></p><h2 id='title'></h2><h3 id='artist'></h3><blockquote id='lyric'></blockquote>
-<div><button onclick='prev()'>←</button><button onclick='next()'>→</button></div></div>
-<script src='songs.js'></script><script src='script.js'></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amber365 ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background-hearts"></div>
+
+<!-- Welcome Screen -->
+
+<section id="welcome" class="screen active">
+
+    <div class="welcome-card">
+
+        <h1>Amber365</h1>
+
+        <p class="tagline">
+            365 songs.<br>
+            365 reminders of you.
+        </p>
+
+        <button id="beginButton">
+            Begin ♡
+        </button>
+
+    </div>
+
+</section>
+
+<!-- Main App -->
+
+<section id="app" class="screen">
+
+    <header>
+
+        <div class="progress">
+
+            <span id="dayNumber">
+                Day 1 of 365
+            </span>
+
+            <span id="progress">
+                1 / 365
+            </span>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="song-card" id="songCard">
+
+            <div class="song-content">
+
+                <h2 id="songTitle">
+                    Sun to Me
+                </h2>
+
+                <h3 id="artist">
+                    Zach Bryan
+                </h3>
+
+                <blockquote id="lyric">
+                    "You're the sun to me."
+                </blockquote>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <button id="previous">
+            ←
+        </button>
+
+        <button id="next">
+            →
+        </button>
+
+    </footer>
+
+</section>
+
+<script src="songs.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
