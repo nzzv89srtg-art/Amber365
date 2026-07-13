@@ -37,12 +37,12 @@ const songs = [
   }
 ];
 
-// Fill the remaining days
-for (let i = 7; i <= 365; i++) {
+// Automatically create Days 7–365
+for (let day = 7; day <= 365; day++) {
   songs.push({
-    day: i,
-    title: "Coming Soon",
+    day,
+    title: `Day ${day}`,
     artist: "",
-    lyric: "Another song is waiting for you soon... ❤️"
+    lyric: "Another song will be waiting here soon... ❤️"
   });
 }
