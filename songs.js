@@ -63,17 +63,17 @@ const songs = [
     day: 11,
     title: "Just the Way You Are",
     artist: "Bruno Mars",
-    lyric: "And when you smile..."
+    lyric: "When you smile, the whole world stops and stares for a while."
   },
   {
     day: 12,
     title: "Just the Way You Are",
     artist: "Bruno Mars",
-    lyric: "When I see your face..."
+    lyric: "When I see your face, there's not a thing that I would change."
   }
 ];
 
-// Fill the remaining days automatically
+// Automatically fill Days 13–365
 for (let day = 13; day <= 365; day++) {
   songs.push({
     day: day,
