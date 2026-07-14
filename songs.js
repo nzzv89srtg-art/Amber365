@@ -70,11 +70,35 @@ const songs = [
     title: "Just the Way You Are",
     artist: "Bruno Mars",
     lyric: "When I see your face, there's not a thing that I would change."
+  },
+  {
+    day: 13,
+    title: "A Thousand Years",
+    artist: "Christina Perri",
+    lyric: "I've loved you for a thousand years, I'll love you for a thousand more."
+  },
+  {
+    day: 14,
+    title: "Heaven",
+    artist: "Bryan Adams",
+    lyric: "You're the closest to heaven that I'll ever be."
+  },
+  {
+    day: 15,
+    title: "Work Song",
+    artist: "Hozier",
+    lyric: "When my time comes around, lay me gently in the cold dark earth... I'll crawl home to her."
+  },
+  {
+    day: 16,
+    title: "A Sky Full of Stars",
+    artist: "Coldplay",
+    lyric: "In a sky full of stars, I think I saw you."
   }
 ];
 
-// Automatically fill Days 13–365
-for (let day = 13; day <= 365; day++) {
+// Fill Days 17–365
+for (let day = 17; day <= 365; day++) {
   songs.push({
     day: day,
     title: `Day ${day}`,
